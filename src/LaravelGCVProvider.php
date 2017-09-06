@@ -14,7 +14,9 @@ class LaravelGCVProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        $this->publishes([
+            __DIR__.'/config/gcv.php' => config_path('gcv.php'),
+        ]);
     }
 
     /**
