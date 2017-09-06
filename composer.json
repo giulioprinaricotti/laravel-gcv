@@ -1,0 +1,16 @@
+{
+    "name": "giulioprinaricotti/laravel-gcv",
+    "description": "Google Cloud Vision API Laravel package",
+    "type": "library",
+    "require": {
+        "google/cloud-vision": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Giulio Prina Ricotti",
+            "email": "g.prinaricotti@gmail.com"
+        }
+    ]
+}
