@@ -12,5 +12,8 @@
             "name": "Giulio Prina Ricotti",
             "email": "g.prinaricotti@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": { "LaravelGCV\\" : "src/" }
+    }
 }
