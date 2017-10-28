@@ -8,7 +8,10 @@ class LaravelGCV {
 
 		//EXT PATH
 		if (is_string($file) && in_array(parse_url($file, PHP_URL_SCHEME), array('http', 'https'))) {
-			$imageData = file_get_contents($file);
+			$imageData = @file_get_contents($file);
+			if ($imageData === FALSE) {
+				return null;
+			}
 		} else {
 			$imageData = $file;
 		}
